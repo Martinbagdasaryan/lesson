@@ -18,30 +18,26 @@ function fib(num){
     return sum
 }
 
+//2
 function foct(num){
     let c =[]
-    for(let j = 0;j<num;j ++){
+    let q = []
+    for(y = 0;y < num;y++){
+        for(let j = 0;j<num;j ++){
         c.push(j+1)
         for (let i = 1;i <num;i++){
             c[j]*=i
         }
-
     }
-    console.log(c);
-    for(let i=0;i<c.length;i++){
-        console.log(c[i]);
-        if(c[i]===num){
-            return true
-        }
-        else {
-            return false
-        } 
+    tv = c.pop()
+    q.push(tv)
+    num--
     }
-    return c
+    return q
 }
 
 
-console.log(foct(4));
+console.log(foct(5));
 
 
 
