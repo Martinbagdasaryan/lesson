@@ -19,7 +19,8 @@ function fib(num){
 }
 
 //2
-function foct(num){
+
+function fact(num){
     let c =[]
     let q = []
     let b = 1
@@ -37,13 +38,50 @@ function foct(num){
     // q.push(c.pop())
 }
 
+//3
 
-console.log(foct(6));
+function pri(smnum,binum){
+    let q = []
+    if(31 > binum && binum >9){
+        for(smnum;smnum<binum+1;smnum++){
+            q.unshift(smnum)
+        }
+        return q
+    }
+    else {
+        return "the entered number does not match the conditions"
+    }
+}
 
+//4
 
+function sum(number1,number2,number3){
+    let a = number1,b = number2,c = number3;
+    for(let i = 0;i<number1;i++){
+        a += i
+    }
+    console.log(a);
+    for(let i = 0;i<number2;i++){
+        b += i
+    }
+    console.log(b);
+    for(let i = 0;i<number3;i++){
+        c += i
+    }
+    console.log(c);
+}
 
+//5
 
-
-
-
+let arr = []
+function rec(n,m){
+    if (n === m){
+        return arr
+    }
+    else{
+        arr.push(m)
+        m--
+        return rec(n,m)
+    }
+}
 
