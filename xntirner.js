@@ -22,22 +22,23 @@ function fib(num){
 function foct(num){
     let c =[]
     let q = []
-    for(y = 0;y < num;y++){
-        for(let j = 0;j<num;j ++){
-        c.push(j+1)
-        for (let i = 1;i <num;i++){
-            c[j]*=i
+    let b = 1
+    for(let j = 1;j<=Math.floor(num/2);j ++){
+        c.push(j)
+        b = c.reduce((a, b) => a * b, 1)
+        q.push(b)
+    }
+    for(let i = 0;i<q.length;i++){
+        if(q[i]===num){
+            return true
         }
     }
-    tv = c.pop()
-    q.push(tv)
-    num--
-    }
-    return q
+    return false
+    // q.push(c.pop())
 }
 
 
-console.log(foct(5));
+console.log(foct(6));
 
 
 
