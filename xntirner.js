@@ -114,11 +114,6 @@ const reverseParentheses = (str) => {
   return str;
 };
 
-console.log(reverseParentheses("(barev)"));
-console.log(reverseParentheses("barev(axper)jan"));
-console.log(reverseParentheses("(barev)(dzez)"));
-console.log(reverseParentheses("barev(axper(jan))"));
-
 
 
 
